@@ -10,8 +10,24 @@
             close
         </mat-icon>
     </button>
+    <img class=" avatar mat-elevation-z8" src="../../assets/logo.png">
+    <mat-divider [vertical]="true" class="hor"></mat-divider>
     Mark Express Pvt. Ltd.
-    
+    <div class="example-form">
+        <form >
+            <mat-form-field class="example-full-width">
+            <span matPrefix> </span>
+            <input type="tel" matInput placeholder="Search" name= "search" [(ngModel)]= "search">
+            <button matSuffix mat-button><mat-icon >search</mat-icon></button>
+            </mat-form-field>
+            <br/>
+            {{search}}
+            </form>
+    </div>
+    <div class="prof">
+        <button mat-button class="btn btn-danger" (click)="logout()">Logout</button>
+      </div>
+      
 </mat-toolbar>
 
 <mat-sidenav-container>

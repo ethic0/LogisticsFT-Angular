@@ -16,7 +16,7 @@ id:string;
     private authService:AuthService,private observer: BreakpointObserver) { }
  @ViewChild(MatSidenav)
  sidenav!:MatSidenav;
-
+ search : String ="";
   ngOnInit() {
     // let data = localStorage.getItem("userid");
     // if(!data)

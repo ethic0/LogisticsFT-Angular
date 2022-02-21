@@ -51,10 +51,22 @@ mat-sidenav-container {
 .avatar {
     margin-top: 16px;
     width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    height: 80px;
+    float: right;
 }
-
+.prof{
+    position: absolute;
+    float: left;
+    right: 10px;
+}
+.example-form{
+    position: absolute;
+    margin-top: 16px;
+    width: 100px;
+    height: 80px;
+    float: left;
+    right: 400px;
+}
 .name {
     margin-top: 8px;
     font-weight: normal;
@@ -70,4 +82,12 @@ mat-divider {
     margin-top: 16px;
     margin-bottom: 16px;
     background-color: rgba(255, 255, 255, 0.5);
+}
+.hor{
+    padding: auto;
+    margin-left: 20px;
+    background-color: rgba(255,255,255,0);
+}
+.flexExpand {
+    flex: 1 1 auto;
 }
