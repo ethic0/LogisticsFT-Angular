@@ -18,10 +18,6 @@ id:string;
  sidenav!:MatSidenav;
  search : String ="";
   ngOnInit() {
-    // let data = localStorage.getItem("userid");
-    // if(!data)
-    //   this.router.navigate(["/"]);
-    
     this.id = localStorage.getItem('token');
 
   }

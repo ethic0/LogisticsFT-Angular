@@ -1,6 +1,5 @@
 <app-banner></app-banner>
-<!-- <app-header class="header"></app-header>
-<app-main-db></app-main-db> -->
+
 <mat-toolbar class="mat-elevation-z8">
     <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
         <mat-icon *ngIf="!sidenav.opened">
@@ -33,18 +32,15 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
 
-        <!-- <img class="avatar mat-elevation-z8" src="../../assets/logo.png" />
-
-        <h4 class="name">Mumbai</h4>
-        <p class="designation">Company Admin</p>
-
-        <mat-divider></mat-divider> -->
-
+        <!--admin options-->
         <button mat-button [matMenuTriggerFor]="Admin" class="menu-button">
             <mat-icon>account_circle</mat-icon>
             <span>Admin</span>
         </button>
-        <mat-menu #Admin="matMenu" class="admin">
+           <mat-menu #Admin="matMenu">
+               <button mat-menu-item [matMenuTriggerFor]="admin" >Admin Options</button>
+           </mat-menu>
+           <mat-menu #admin="matMenu" >
             <button mat-menu-item >Sales Report</button>
             <button mat-menu-item >Status Report</button>
             <button mat-menu-item >Pending Manifest</button>
@@ -55,13 +51,18 @@
             <button mat-menu-item >Business</button>
             <button mat-menu-item >POD Download</button>
             <button mat-menu-item >Stock Issue</button>
-            
         </mat-menu>
+        <!--admin options end-->
+
+        <!--Master Options-->
         <button mat-button [matMenuTriggerFor]="Master" class="menu-button">
             <mat-icon>person</mat-icon>
             <span>Master</span>
         </button>
-        <mat-menu #Master="matMenu">
+            <mat-menu #Master="matMenu">
+                <button mat-menu-item [matMenuTriggerFor]="master">Master Options</button>
+            </mat-menu>
+        <mat-menu #master="matMenu">
             <button mat-menu-item> Company Master</button>
             <button mat-menu-item> HUB Master</button>
             <button mat-menu-item> Branch Master</button>
@@ -84,71 +85,99 @@
             <button mat-menu-item> Rate Master (View)</button>
             <button mat-menu-item> Vehicle Master</button>
             <button mat-menu-item> Employee Master</button>
-
         </mat-menu>
+        <!--Master Options End-->
+
+        <!--Operations Options-->
         <button mat-button [matMenuTriggerFor]="Ops" class="menu-button">
             <mat-icon>assignment</mat-icon>
             <span>Operation</span>
         </button>
-            <mat-menu #Ops="matMenu">
-                <button mat-menu-item>Booking</button>
-                <button mat-menu-item>Fast Booking</button>
-                <button mat-menu-item>Manifest</button>
-                <button mat-menu-item>InScan</button>
-                <button mat-menu-item>RunSheet</button>
-                <button mat-menu-item>POD Update</button>
-                <button mat-menu-item>Permission</button>
-            </mat-menu>
+        <mat-menu #Ops="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="ops">Operations Options</button>
+        </mat-menu>
+        <mat-menu #ops="matMenu">
+            <button mat-menu-item>Booking</button>
+            <button mat-menu-item>Fast Booking</button>
+            <button mat-menu-item>Manifest</button>
+            <button mat-menu-item>InScan</button>
+            <button mat-menu-item>RunSheet</button>
+            <button mat-menu-item>POD Update</button>
+            <button mat-menu-item>Permission</button>
+        </mat-menu>
+        <!--Operations Options End-->
+
+        <!--Billing Options-->
         <button mat-button [matMenuTriggerFor]="Billing" class="menu-button">
             <mat-icon>credit_card</mat-icon>
             <span>Billing</span>
         </button>
-            <mat-menu #Billing = "matMenu">
-                <button mat-menu-item>Update Rate</button>
-                <button mat-menu-item>General Invoice</button>
-                <button mat-menu-item>View Invoice</button>
+            <mat-menu #Billing>
+                <button mat-menu-item [matMenuTriggerFor]="billing">Billing Options</button>
             </mat-menu>
-            <button mat-button [matMenuTriggerFor]="exp" class="menu-button">
-                <mat-icon>info</mat-icon>
-                <span>Expense</span>
-            </button>
-                <mat-menu #exp = "matMenu">
-                    <button mat-menu-item>Pickup</button>
-                    <button mat-menu-item>Forwarding</button>
-                    <button mat-menu-item>Branch/Vendor</button>
-                </mat-menu>
-                <button mat-button [matMenuTriggerFor]="import" class="menu-button">
-                    <mat-icon>play_for_work</mat-icon>
-                    <span>Import</span>
-                </button>
-                    <mat-menu #import = "matMenu">
-                        <button mat-menu-item>Sales</button>
-                        <button mat-menu-item>Delivery</button>
-                        <button mat-menu-item>RTO</button>
-                    </mat-menu>
-                    <button mat-button [matMenuTriggerFor]="report" class="menu-button">
-                        <mat-icon>receipt</mat-icon>
-                        <span>Report</span>
-                    </button>
-                        <mat-menu #report = "matMenu">
-                            <button mat-menu-item>Query</button>
-                            <button mat-menu-item>Sales</button>
-                            <button mat-menu-item>Inbound</button>
-                            <button mat-menu-item>Pending Manifest</button>
-                            <button mat-menu-item>Log File</button>
-                            <button mat-menu-item>Outstanding</button>
-                            <button mat-menu-item>Expense Report</button>
-                            <button mat-menu-item>Expense Report (Profit Statement)</button>
-                        </mat-menu>
-        <mat-divider></mat-divider>
+        <mat-menu #billing = "matMenu" >
+            <button mat-menu-item>Update Rate</button>
+            <button mat-menu-item>General Invoice</button>
+            <button mat-menu-item>View Invoice</button>
+        </mat-menu>
+        <!--Billing Options End-->
 
+        <!--Expense Options-->
+        <button mat-button [matMenuTriggerFor]="exp" class="menu-button">
+            <mat-icon>info</mat-icon>
+            <span>Expense</span>
+        </button>
+            <mat-menu #exp>
+                <button mat-menu-item [matMenuTriggerFor]="Exp">Expense Options</button>
+            </mat-menu>
+        <mat-menu #Exp = "matMenu">
+            <button mat-menu-item>Pickup</button>
+            <button mat-menu-item>Forwarding</button>
+            <button mat-menu-item>Branch/Vendor</button>
+        </mat-menu>
+        <!--Expense Options End-->
+
+        <!--Import Options-->
+        <button mat-button [matMenuTriggerFor]="import" class="menu-button">
+            <mat-icon>play_for_work</mat-icon>
+            <span>Import</span>
+        </button>
+            <mat-menu #import="matMenu"> 
+                <button mat-menu-item [matMenuTriggerFor]="Import">Import Options</button>
+            </mat-menu>
+            <mat-menu #Import = "matMenu">
+            <button mat-menu-item>Sales</button>
+            <button mat-menu-item>Delivery</button>
+            <button mat-menu-item>RTO</button>
+        </mat-menu>
+        <!--Import Options End-->
+
+        <!--Report Options-->
+        <button mat-button [matMenuTriggerFor]="report" class="menu-button">
+            <mat-icon>receipt</mat-icon>
+            <span>Report</span>
+        </button>
+            <mat-menu #report="matMenu">
+                <button mat-menu-item [matMenuTriggerFor]="Report">Report Options</button>
+            </mat-menu>
+        <mat-menu #Report = "matMenu">
+            <button mat-menu-item>Query</button>
+            <button mat-menu-item>Sales</button>
+            <button mat-menu-item>Inbound</button>
+            <button mat-menu-item>Pending Manifest</button>
+            <button mat-menu-item>Log File</button>
+            <button mat-menu-item>Outstanding</button>
+            <button mat-menu-item>Expense Report</button>
+            <button mat-menu-item>Expense Report (Profit Statement)</button>
+        </mat-menu>
+        <!--Report Options End-->
         <button mat-button class="menu-button">
             <mat-icon>help</mat-icon>
             <span>Help</span>
         </button>
-
-    </mat-sidenav>
-    <mat-sidenav-content>
+        <mat-divider></mat-divider>
+        </mat-sidenav>
+        <mat-sidenav-content>
         <div class="content mat-elevation-z8">
             Main content here!
         </div>
