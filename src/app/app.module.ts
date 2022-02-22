@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatTreeModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatTreeModule, MatTabsModule } from '@angular/material';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { AuthGuard } from './guards/auth.guard';
@@ -44,7 +44,8 @@ import { MainDBComponent } from './main-db/main-db.component';
     MatMenuModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTreeModule
+    MatTreeModule,
+    MatTabsModule
   ],
   providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]

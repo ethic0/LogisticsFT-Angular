@@ -179,8 +179,186 @@
         <mat-divider></mat-divider>
         </mat-sidenav>
         <mat-sidenav-content>
-        <div class="content mat-elevation-z8">
-            Main content here!
+
+         <!--Main Dashboard-->   
+        <div id="container" class="row">
+            <!--Pickup panel-->
+            <div id="pickup" class="column">
+                <div class="content mat-elevation-z8 box1">
+                    <div style="text-align: center;">
+                        <h1>Pick up</h1>
+                        <mat-tab-group dynamicHeight mat-align-tabs="start">
+        
+                            <mat-tab label="Pending">
+                                <div class="example-small-box mat-elevation-z4">
+                                    20
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Done">
+                                <div class="example-large-box mat-elevation-z4">
+                                    5
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
+            <!--Pickup Panel-->
+            <div id="pickup" class="column">
+                <div class="content mat-elevation-z8 box1-2">
+                    <div style="text-align: center;">
+                        <h1>Manifest</h1>
+                        <mat-tab-group dynamicHeight mat-align-tabs="start">
+        
+                            <mat-tab label="Pending">
+                                <div class="example-small-box mat-elevation-z4">
+                                    50
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Done">
+                                <div class="example-large-box mat-elevation-z4">
+                                    75
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
+
+            <!--InScan Panel-->
+            <div  class="column">
+                <div class="content mat-elevation-z8 box1-3">
+                    <div style="text-align: center;">
+                        <h1>InScan</h1>
+                        <mat-tab-group dynamicHeight mat-align-tabs="start">
+        
+                            <mat-tab label="Pending">
+                                <div class="example-small-box mat-elevation-z4">
+                                    100
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Done">
+                                <div class="example-large-box mat-elevation-z4">
+                                    150
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
+            <!--InScan Panel-->
+
+             <!--DRS panel-->
+             <div class="column">
+                <div class="content mat-elevation-z8 box1-4">
+                    <div style="text-align: center;">
+                        <h1>DRS</h1>
+                        <mat-tab-group dynamicHeight mat-align-tabs="start">
+        
+                            <mat-tab label="Pending">
+                                <div class="example-small-box mat-elevation-z4">
+                                    50
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Done">
+                                <div class="example-large-box mat-elevation-z4">
+                                    65
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>   
         </div>
+
+        <!--Second Row-->
+
+        <div id="container" class="row">
+            <!--status panel-->
+            <div  class="column2">
+                <div class="content mat-elevation-z8 box2">
+                    <div style="text-align: center;">
+                        <h1>Status</h1>
+                        <mat-tab-group dynamicHeight mat-align-tabs="start">
+        
+                            <mat-tab label="Undelivered">
+                                <div class="example-small-box mat-elevation-z4">
+                                    10
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="RTO">
+                                <div class="example-large-box mat-elevation-z4">
+                                    20
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Delivered">
+                                <div class="example-large-box mat-elevation-z4">
+                                    30
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
+            <!--sales Panel-->
+            <div class="column2">
+                <div class="content mat-elevation-z8 box2-2">
+                    <div style="text-align: center;">
+                        <h1>Sales</h1>
+                        <mat-tab-group dynamicHeight mat-align-tabs="start">
+        
+                            <mat-tab label="Credit">
+                                <div class="example-small-box mat-elevation-z4">
+                                    41
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Cash">
+                                <div class="example-large-box mat-elevation-z4">
+                                    15
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="To Pay">
+                                <div class="example-large-box mat-elevation-z4">
+                                    62
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
+            <!--AWB Stock-->
+            <div class="column2">
+                <div class="content mat-elevation-z8 box2-3">
+                    <div style="text-align: center;">
+                        <h1>AWB Stock</h1>
+                        <mat-tab-group dynamicHeight mat-align-tabs="start">
+        
+                            <mat-tab label="Total">
+                                <div class="example-small-box mat-elevation-z4">
+                                    10
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Used">
+                                <div class="example-large-box mat-elevation-z4">
+                                    23
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Unused">
+                                <div class="example-large-box mat-elevation-z4">
+                                    52
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+            </div>
+            <!--AWB Stock-->
+        </div>
+        
+        
+       
+
+        
     </mat-sidenav-content>
 </mat-sidenav-container>
+

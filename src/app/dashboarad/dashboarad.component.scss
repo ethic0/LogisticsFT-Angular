@@ -25,12 +25,200 @@ mat-sidenav {
     margin-left: 32px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content:left;
+    // align-items:center;
 
     font-size: 2rem;
     color: lightgray;
 }
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+    }
+  } 
+.box1{
+    background-color:lightblue;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    // padding-top: 50px;
+    color:#1b1c1b;
+    
+
+    // border: 2px solid black;
+    // justify-content: center;
+    align-items: center;
+}
+.box1-2{
+    background-color:#9d5de7;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    // padding-top: 50px;
+    color:#1b1c1b;
+    
+
+    // border: 2px solid black;
+    // justify-content: center;
+    align-items: center;
+}
+.box1-3{
+    background-color:rgb(201, 105, 180);
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    // padding-top: 50px;
+    color:#1b1c1b;
+    
+
+    // border: 2px solid black;
+    // justify-content: center;
+    align-items: center;
+}
+.box1-4{
+    background-color:rgb(236, 173, 100);
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    // padding-top: 50px;
+    color:#1b1c1b;
+    
+
+    // border: 2px solid black;
+    // justify-content: center;
+    align-items: center;
+}
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+    }
+  } 
+.box2{
+    background-color:rgb(113, 243, 134);
+    display: flex;
+    margin-top: 50px;
+    // margin-left: 100px;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    color:#1b1c1b;
+    align-items: center;
+    justify-content: center;
+}
+.box2-2{
+    background-color:rgba(82, 139, 224, 0.548);
+    display: flex;
+    margin-top: 50px;
+    // margin-left: 100px;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    color:#1b1c1b;
+    align-items: center;
+    justify-content: center;
+}
+.box2-3{
+    background-color:rgb(212, 89, 89);
+    display: flex;
+    margin-top: 50px;
+    // margin-left: 100px;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    color:#1b1c1b;
+    align-items: center;
+    justify-content: center;
+}
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+    }
+  } 
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    // height: 300px; 
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+    }
+  } 
+  .column2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+    }
+  } 
+
+.mat-tab-group{
+    padding-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-small-box, .example-large-box {
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .example-small-box {
+    height: 100px;
+    width: 200px;
+    background-color: #edeba8;
+  }
+  
+  .example-large-box {
+    height: 100px;
+    width: 200px;
+    background-color: #38e841;
+  }
+
+
 
 mat-sidenav-container {
     height: calc(100vh - 65px);
@@ -92,3 +280,6 @@ mat-divider {
     flex: 1 1 auto;
 }
 
+// .mat-tab-group {
+//     margin-bottom: 48px;
+//   }
