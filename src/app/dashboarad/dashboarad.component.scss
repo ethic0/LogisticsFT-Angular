@@ -10,7 +10,7 @@ mat-sidenav {
     background: #002b5c;
     color: white;
     border-radius: 10px;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     
         .mat-menu-panel.admin {
@@ -21,8 +21,8 @@ mat-sidenav {
 .content {
     height: calc(100vh - 98px);
     border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
+    // margin: 16px;
+    // margin-left: 32px;
 
     display: flex;
     // justify-content:left;
@@ -30,6 +30,11 @@ mat-sidenav {
 
     font-size: 2rem;
     color: lightgray;
+}
+.row{
+  width: 98%;
+  align-items: center;
+  margin-left: 32px;
 }
  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 600px) {
@@ -53,6 +58,7 @@ mat-sidenav {
     // justify-content: center;
     align-items: center;
 }
+
 .box1-2{
     // background-color:#9d5de7;
     display: flex;
@@ -102,12 +108,7 @@ mat-sidenav {
     align-items: center;
 }
 
- /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
- @media screen and (max-width: 600px) {
-    .column2 {
-      width: 100%;
-    }
-  } 
+
 .box2{
     // background-color:rgb(113, 243, 134);
     display: flex;
@@ -144,6 +145,11 @@ mat-sidenav {
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 200px) {
+  .box1 .box1-2 .box1-3 .box1-4 .box2 .box2-2 .box2-2 .box2-3 {
+    width: 100%;
+  }
+} 
  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 600px) {
     .column2 {
