@@ -2,6 +2,9 @@ import { Component, OnInit,ViewChild } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { delay } from 'rxjs/operators';
 import { MatSidenav } from '@angular/material';
+import { Router } from '@angular/router';
+
+import { AuthService } from 'src/app/services/auth.service';
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -10,9 +13,14 @@ import { MatSidenav } from '@angular/material';
 export class NavigationComponent implements OnInit {
   @ViewChild(MatSidenav)
   sidenav!:MatSidenav;
-  constructor(private observer: BreakpointObserver) { }
-
+  constructor(private observer: BreakpointObserver, private authService:AuthService, private router:Router) { }
+  search:String=""
   ngOnInit() {
+  }
+  logout(){
+    console.log("loggin out");
+    this.authService.logout();
+    this.router.navigate([""]);
   }
   ngAfterViewInit() {
     this.observer

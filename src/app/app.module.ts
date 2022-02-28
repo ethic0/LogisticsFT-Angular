@@ -17,8 +17,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { BannerComponent } from './banner/banner.component';
 import { MainDBComponent } from './main-db/main-db.component';
-import { BookingComponent } from './dBComponents/Operation/booking/booking.component';
-import { SalesReportComponent } from './dBComponents/admin/sales-report/sales-report.component';
+
+
 import { NavigationComponent } from './layout/navigation/navigation.component';
 
 @NgModule({
@@ -30,8 +30,8 @@ import { NavigationComponent } from './layout/navigation/navigation.component';
     
     BannerComponent,
     MainDBComponent,
-    BookingComponent,
-    SalesReportComponent,
+    
+    
     NavigationComponent
   ],
   imports: [

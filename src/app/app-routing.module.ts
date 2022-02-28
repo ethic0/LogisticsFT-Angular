@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboaradComponent } from './dashboarad/dashboarad.component';
-import { SalesReportComponent } from './dBComponents/admin/sales-report/sales-report.component';
-import { BookingComponent } from './dBComponents/Operation/booking/booking.component';
+
+
 import { AuthGuard } from './guards/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -16,14 +16,8 @@ const routes: Routes = [
     path:"dashboard",
     component:DashboaradComponent,canActivate:[AuthGuard]
   },
-  {
-    path:"booking",
-    component:BookingComponent,canActivate:[AuthGuard]
-  },
-  {
-    path:"admin/salesReport",
-    component:SalesReportComponent,canActivate:[AuthGuard]
-  },
+  
+  
   {path:"**",
   component:NotFoundComponent
   }
