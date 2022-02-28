@@ -43,16 +43,16 @@
             <button mat-menu-item [matMenuTriggerFor]="admin">Admin Options</button>
         </mat-menu>
         <mat-menu #admin="matMenu">
-            <button mat-menu-item>Sales Report</button>
-            <button mat-menu-item>Status Report</button>
-            <button mat-menu-item>Pending Manifest</button>
-            <button mat-menu-item>Pending RunSheet</button>
-            <button mat-menu-item>Summary</button>
-            <button mat-menu-item>Create Login</button>
-            <button mat-menu-item>Status Entry</button>
-            <button mat-menu-item>Business</button>
-            <button mat-menu-item>POD Download</button>
-            <button mat-menu-item>Stock Issue</button>
+            <button mat-menu-item routerLink="/salesReport">Sales Report</button>
+            <button mat-menu-item routerLink="/statusReport">Status Report</button>
+            <button mat-menu-item routerLink="/pendingManifest">Pending Manifest</button>
+            <button mat-menu-item routerLink="/pendingRunSheet">Pending RunSheet</button>
+            <button mat-menu-item routerLink="/summary">Summary</button>
+            <button mat-menu-item routerLink="/createLogin">Create Login</button>
+            <button mat-menu-item routerLink="/statusEntry">Status Entry</button>
+            <button mat-menu-item routerLink="/business">Business</button>
+            <button mat-menu-item routerLink="/PODdownload">POD Download</button>
+            <button mat-menu-item routerLink="/stockIssue">Stock Issue</button>
         </mat-menu>
         <!--admin options end-->
         <mat-divider></mat-divider>
